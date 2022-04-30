@@ -19,7 +19,7 @@ public class Gradus {
     static class Kelvin implements Converter {
         @Override
         public void getConvertedValue() {
-            double kel = 1.8 * g + 32;
+            double kel = g + 273.15;
             System.out.println("Kelvin: " + kel);
         }
     }
@@ -27,7 +27,7 @@ public class Gradus {
     static class Fahrenheit implements Converter {
         @Override
         public void getConvertedValue() {
-            double fah = g + 273.15;
+            double fah = 1.8 * g + 32;
             System.out.println("Fahrenheit: " + fah);
         }
     }
